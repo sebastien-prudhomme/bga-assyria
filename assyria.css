@@ -1,0 +1,372 @@
+/**
+ * ------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Assyria implementation: © Sebastien Prud'homme <daikinee@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * assyria.css
+ *
+ */
+
+@import url('../../../css/csslayer.css');
+
+.board {
+    position: relative;
+
+    float: left;
+
+    width: 697px;
+    height: 496px;
+    margin-right: 36px;
+    margin-bottom: 139px;
+
+    background-image: url('img/board.jpg');
+}
+
+.card_deck {
+    width: 50px;
+    height: 79px;
+
+    background-image: url('img/cards.png');
+    background-position: -850px 0;
+}
+
+.card_location {
+    position: absolute;
+
+    width: 50px;
+    height: 79px;
+}
+
+.counter_icon {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.counter_text {
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+
+.disc_location {
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+}
+
+.discs {
+    background-image: url('img/discs.png');
+}
+
+.disc {
+    width: 18px;
+    height: 10px;
+}
+
+.disc_ff0000 {
+    background-position: 0 0;
+}
+
+.disc_008000 {
+    background-position: -18px 0;
+}
+
+.disc_0000ff {
+    background-position: -36px 0;
+}
+
+.disc_ffff00 {
+    background-position: -54px 0;
+}
+
+.expansion_deck {
+    width: 50px;
+    height: 79px;
+
+    background-image: url('img/expansions.png');
+    background-position: -200px 0;
+}
+
+.help {
+    display: inline-block;
+}
+
+.help_info {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+
+    vertical-align: top;
+
+    background-image: url('img/help_info.png');
+}
+
+.hexagon_forbidden {
+    width: 52px;
+    height: 45px;
+
+    background-image: url('img/hexagon.png');
+}
+
+.hexagon_location {
+    position: absolute;
+
+    width: 26px;
+    height: 45px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.hexagon_location::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    -webkit-transform: rotateZ(60deg);
+    transform: rotateZ(60deg);
+}
+
+.hexagon_location::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    -webkit-transform: rotateZ(-60deg);
+    transform: rotateZ(-60deg);
+}
+
+.huts {
+    background-image: url('img/huts.png');
+}
+
+.hut_space {
+    width: 14px;
+    height: 16px;
+}
+
+.hut_space_ff0000 {
+    background-position: 0 0;
+}
+
+.hut_space_008000 {
+    background-position: -14px 0;
+}
+
+.hut_space_0000ff {
+    background-position: -28px 0;
+}
+
+.hut_space_ffff00 {
+    background-position: -42px 0;
+}
+
+.hut {
+    width: 14px;
+    height: 16px;
+}
+
+.hut_ff0000 {
+    background-position: -56px 0;
+}
+
+.hut_008000 {
+    background-position: -70px 0;
+}
+
+.hut_0000ff {
+    background-position: -84px 0;
+}
+
+.hut_ffff00 {
+    background-position: -98px 0;
+}
+
+.log_icon {
+    position: relative;
+    top: 3px;
+
+    display: inline-block;
+}
+
+.icons {
+    background-image: url('img/icons.png');
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.icon_grape {
+    background-position: 0 0;
+}
+
+.icon_palm {
+    background-position: -16px 0;
+}
+
+.icon_salt {
+    background-position: -32px 0;
+}
+
+.icon_barley {
+    background-position: -48px 0;
+}
+
+.icon_date {
+    background-position: -64px 0;
+}
+
+.icon_plow {
+    width: 24px;
+
+    background-position: -80px 0;
+}
+
+.icon_camel {
+    background-position: -104px 0;
+}
+
+.icon_point {
+    background-position: -120px 0;
+}
+
+.icon_wild {
+    display: none;
+}
+
+.player_counter {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.starting_space {
+    width: 30px;
+    height: 30px;
+}
+
+.starting_space_ff0000 {
+    background-position: 0 0;
+}
+
+.starting_space_008000 {
+    background-position: -30px 0;
+}
+
+.starting_space_0000ff {
+    background-position: -60px 0;
+}
+
+.starting_space_ffff00 {
+    background-position: -90px 0;
+}
+
+.stockitem {
+    cursor: default;
+}
+
+.wells {
+    background-image: url('img/wells.png');
+}
+
+.well_space {
+    width: 18px;
+    height: 10px;
+
+    background-position: 0 0;
+}
+
+.well {
+    width: 18px;
+    height: 10px;
+
+    background-position: -18px 0;
+}
+
+.well_location {
+    position: absolute;
+
+    width: 18px;
+    height: 10px;
+}
+
+.ziggurats {
+    background-image: url('img/ziggurats.png');
+}
+
+.ziggurat_base {
+    width: 30px;
+    height: 30px;
+}
+
+.ziggurat_base_ff0000 {
+    background-position: -120px 0;
+}
+
+.ziggurat_base_008000 {
+    background-position: -150px 0;
+}
+
+.ziggurat_base_0000ff {
+    background-position: -180px 0;
+}
+
+.ziggurat_base_ffff00 {
+    background-position: -210px 0;
+}
+
+.ziggurat_center {
+    width: 20px;
+    height: 20px;
+}
+
+.ziggurat_center_ff0000 {
+    background-position: -240px 0;
+}
+
+.ziggurat_center_008000 {
+    background-position: -260px 0;
+}
+
+.ziggurat_center_0000ff {
+    background-position: -280px 0;
+}
+
+.ziggurat_center_ffff00 {
+    background-position: -300px 0;
+}
+
+.ziggurat_roof {
+    width: 10px;
+    height: 10px;
+}
+
+.ziggurat_roof_ff0000 {
+    background-position: -320px 0;
+}
+
+.ziggurat_roof_008000 {
+    background-position: -330px 0;
+}
+
+.ziggurat_roof_0000ff {
+    background-position: -340px 0;
+}
+
+.ziggurat_roof_ffff00 {
+    background-position: -350px 0;
+}
